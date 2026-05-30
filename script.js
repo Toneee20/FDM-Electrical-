@@ -192,7 +192,7 @@ function showPage(name){
   if (target) target.classList.add('active');
   document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active', a.dataset.nav===name));
   document.querySelectorAll('[data-mnav]').forEach(a=>a.classList.toggle('active', a.dataset.mnav===name));
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0;
   if (name==='cart') renderCart();
   if (name==='account') renderAccount();
   if (name==='shop') paintProductImages();
@@ -203,7 +203,7 @@ function showBlogPost(slug){
   const target = document.getElementById('page-blog-'+slug);
   if (target) target.classList.add('active');
   document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active', a.dataset.nav==='blog'));
-  window.scrollTo({top:0,behavior:'smooth'});
+  window.scrollTo(0,0);document.documentElement.scrollTop=0;document.body.scrollTop=0;
 }
 
 function closeDrawer(){
@@ -242,6 +242,32 @@ updateBadges();
 renderCart();
 renderAccount();
 paintProductImages();
+
+
+/* ── Navigation Event Delegation ── */
+(function(){
+  function wire(){
+    document.querySelectorAll('[data-page]').forEach(function(el){
+      el.addEventListener('click',function(e){
+        e.preventDefault();
+        showPage(el.getAttribute('data-page'));
+        var d=document.getElementById('mDrawer');
+        if(d&&d.classList.contains('open'))closeDrawer();
+      });
+    });
+    document.querySelectorAll('[data-blog]').forEach(function(el){
+      el.addEventListener('click',function(e){
+        e.preventDefault();
+        showBlogPost(el.getAttribute('data-blog'));
+        var d=document.getElementById('mDrawer');
+        if(d&&d.classList.contains('open'))closeDrawer();
+      });
+    });
+  }
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',wire);
+  }else{wire();}
+})();
 
 /* ── Image Registry ── */
 (function(){
