@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FMD Electrical — Solar &amp; Electrical Specialists | Vereeniging</title>
+<meta name="description" content="FMD Electrical (Pty) Ltd — Solar installations, electrical services, inverter repair across Gauteng. PV GreenCard certified. COC issued. Real shop in Vereeniging, Gauteng.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="util"><div class="container">
+<div>PV GreenCard Certified · COC Issued · Free Gauteng Delivery</div>
+<div class="util-right"><a href="tel:+27164540035">📞 016 454 0035</a></div>
+</div></div>
+
+<header class="hdr"><div class="container"><div class="hdr-inner">
+<a href="javascript:void(0)" onclick="showPage('home')" class="brand"><img data-imgid="0" src="" alt="FMD Electrical (Pty) Ltd"></a>
+<nav class="nav">
+<a href="javascript:void(0)" onclick="showPage('home')" data-nav="home" class="active">Home</a>
+<a href="javascript:void(0)" onclick="showPage('shop')" data-nav="shop">Shop</a>
+<a href="javascript:void(0)" onclick="showPage('services')" data-nav="services">Services</a>
+<a href="javascript:void(0)" onclick="showPage('blog')" data-nav="blog">Blog</a>
+<a href="javascript:void(0)" onclick="showPage('about')" data-nav="about">About</a>
+<a href="javascript:void(0)" onclick="showPage('contact')" data-nav="contact">Contact</a>
+</nav>
+<div class="hdr-actions">
+<a href="javascript:void(0)" onclick="showPage('account')" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+<a href="javascript:void(0)" onclick="showPage('cart')" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span class="cart-badge" id="cartBadge">0</span></a>
+<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary cta-q">Get a Quote</a>
+<button class="m-toggle" id="mOpen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+</div></div></div></header>
+
+<div class="m-overlay" id="mOverlay"></div>
+<aside class="m-drawer" id="mDrawer">
+<div class="m-head"><img data-imgid="0" src="" alt="FMD" style="height:38px"><button class="m-close" id="mClose">✕</button></div>
+<nav class="m-nav">
+<a href="javascript:void(0)" onclick="showPage('home');closeDrawer()">Home</a>
+<a href="javascript:void(0)" onclick="showPage('shop');closeDrawer()">Shop All Products</a>
+<a href="javascript:void(0)" onclick="showPage('services');closeDrawer()">Services &amp; Installations</a>
+<a href="javascript:void(0)" onclick="showPage('blog');closeDrawer()">📖 Blog / Knowledge Centre</a>
+<a href="javascript:void(0)" onclick="showPage('about');closeDrawer()">About FMD</a>
+<a href="javascript:void(0)" onclick="showPage('contact');closeDrawer()">Contact</a>
+<a href="javascript:void(0)" onclick="showPage('quote');closeDrawer()">Get a Quote</a>
+<a href="javascript:void(0)" onclick="showPage('cart');closeDrawer()">Cart</a>
+<a href="javascript:void(0)" onclick="showPage('account');closeDrawer()">My Account</a>
+</nav>
+<div class="m-contact">
+<a href="tel:+27164540035">📞 016 454 0035</a>
+<a href="https://wa.me/27817033912" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Zm7.305-9.96c-.4-.2-2.367-1.168-2.734-1.302-.366-.134-.633-.2-.9.2s-1.033 1.302-1.266 1.569c-.234.267-.467.3-.867.1-.4-.2-1.69-.623-3.218-1.985-1.19-1.062-1.993-2.373-2.226-2.773-.234-.4-.025-.617.175-.816.18-.18.4-.467.6-.7.2-.234.267-.4.4-.667.134-.267.067-.5-.033-.7-.1-.2-.9-2.168-1.234-2.968-.323-.78-.652-.673-.9-.687-.234-.012-.5-.014-.767-.014a1.47 1.47 0 0 0-1.067.5c-.367.4-1.4 1.367-1.4 3.335 0 1.967 1.434 3.868 1.634 4.135.2.267 2.821 4.309 6.836 6.041.955.413 1.7.66 2.282.846.959.305 1.831.262 2.521.158.769-.115 2.367-.967 2.701-1.901.333-.934.333-1.735.234-1.901-.1-.167-.367-.267-.767-.467Z"/></svg>WhatsApp Us</a>
+</div></aside>
+
+<div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg><span id="toastMsg">Added to cart</span></div>
+<div class="page active" id="page-home">
+
+<section class="hero">
+<div class="container"><div class="hero-grid">
+<div>
+<div class="eyebrow">Solar · Electrical · Inverter Specialists</div>
+<h1>Trade expertise. Trusted supply. <span class="accent">Real installations.</span></h1>
+<p class="hero-sub">Electrical, security and solar systems specialist. We install it, we supply it, we support it — backed by qualified electricians, PV GreenCard certification, and a real shop you can walk into at No 3 Voortrekker Street, Vereeniging.</p>
+<div class="hero-ctas">
+<a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-primary">Shop Online →</a>
+<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-glass">Book a Site Visit</a>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27d%20like%20to%20get%20a%20quote" target="_blank" class="btn btn-wa"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Z"/></svg>WhatsApp</a>
+</div>
+<div class="hero-trust">
+<div class="hero-tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg><span><strong>24hr</strong><span>Quote response</span></span></div>
+<div class="hero-tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><span><strong>PV GreenCard</strong><span>Certified</span></span></div>
+<div class="hero-tr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span><strong>COC</strong><span>Issued on installs</span></span></div>
+</div>
+</div>
+
+<div class="hero-stage">
+<div class="logo-card"><img data-imgid="1" src="" alt="FMD ELECTRICAL"><div class="tagline">We Install It. We Supply It. We Support It.<small>Vereeniging · Vaal Triangle · Gauteng</small></div></div>
+<div class="stat-strip">
+<div class="stat-pill"><div class="lbl">Live Output</div><div class="val g">4.8 kW</div><div class="meta"><span class="pulse"></span>Live</div></div>
+<div class="stat-pill"><div class="lbl">Battery</div><div class="val">87%</div><div class="meta">5.12 kWh</div></div>
+<div class="stat-pill"><div class="lbl">Saved Today</div><div class="val">R 142</div><div class="meta">vs Eskom</div></div>
+</div>
+</div>
+</div></div>
+</section>
+
+<div class="trust"><div class="container"><div class="trust-row">
+<div class="trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 8v4l3 3M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>Free Quotes Within 24hrs</div>
+<div class="trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>PV GreenCard Certified</div>
+<div class="trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg>COC Issued on All Installs</div>
+<div class="trust-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7"/></svg>Fast Gauteng Delivery</div>
+</div></div></div>
+
+<div class="fmd-banner-wrap reveal"><div class="container"><div class="fmd-banner"><img data-imgid="2" src="" alt="FMD Electrical — Solar, Electrical & Inverter Specialists. Trade Expertise. Trusted Supply. Real Installations." loading="lazy"></div></div></div>
+
+<section class="blk"><div class="container">
+<div class="section-head reveal"><div class="eyebrow" style="justify-content:center">What We Do</div><h2>One team. Every step of your electrical &amp; solar work.</h2><p>From a tripped DB at midnight to a complete off-grid solar build — we install it, we supply the parts, and we stand behind the work with a COC.</p></div>
+<div class="svc-grid">
+<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="3" src="" alt="FMD Solar Installation in Vereeniging" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"/></svg></div><h3>Solar Installations</h3><p>Full PV systems — survey, design, supply, install, monitoring app setup, COC.</p><span class="btn-link">Explore Solar →</span></div></div>
+<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="4" src="" alt="FMD Electrical Services — DB boards, wiring, lighting" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4.09 12.97c-.39.48-.39 1.17 0 1.65L13 22h2l-2-7h7l-7-13h-2z"/></svg></div><h3>Electrical Services</h3><p>From a tripped DB to a full re-wire. Fault-finding, new installs, repairs.</p><span class="btn-link">Explore Electrical →</span></div></div>
+<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="5" src="" alt="FMD Inverter Repair and Installation" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3>Inverter Repair</h3><p>We diagnose and we fix — most major brands. Free diagnosis on supported units.</p><span class="btn-link">Book Repair →</span></div></div>
+<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="6" src="" alt="FMD Maintenance and Compliance Inspection" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Maintenance &amp; Compliance</h3><p>Annual checks, panel cleaning, surge protection, COC renewals.</p><span class="btn-link">Book Maintenance →</span></div></div>
+</div></div></section>
+
+<section class="blk" style="background:var(--grey-soft)"><div class="container">
+<div class="section-head reveal"><div class="eyebrow" style="justify-content:center">Featured Stock</div><h2>Top-selling inverters, batteries, lights &amp; panels</h2><p>Real stock at our Vereeniging shop. Click "Add to Cart" — we'll WhatsApp you to confirm the order.</p></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge feat">Premium</span>
+<div class="prod-img has-photo"><img data-imgid="7" src="" alt="Sunsynk 10.2kWh 48Vdc Lithium LiFePO4" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">10.2kWh 48Vdc Lithium LiFePO4</div>
+<div class="prod-specs">48V · High capacity · 10yr warranty</div>
+<div class="prod-price"><span class="p">R 37,720</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-bat-10',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%2010.2kWh%2048Vdc%20Lithium%20LiFePO4" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="8" src="" alt="Sunsynk 5kVA / 5kW Hybrid Inverter 48Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">5kVA / 5kW Hybrid Inverter 48Vdc</div>
+<div class="prod-specs">Single-phase · Dual MPPT · 10yr</div>
+<div class="prod-price"><span class="p">R 17,250</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-5kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%205kVA%20/%205kW%20Hybrid%20Inverter%2048Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Smart</span>
+<div class="prod-img has-photo"><img data-imgid="9" src="" alt="CEO CEO27 Bluetooth Speaker Ceiling Light 96W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">CEO</div>
+<div class="prod-title">CEO27 Bluetooth Speaker Ceiling Light 96W</div>
+<div class="prod-specs">Bluetooth speaker · 3 colours</div>
+<div class="prod-price"><span class="p">R 775</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ceo27',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20CEO%20CEO27%20Bluetooth%20Speaker%20Ceiling%20Light%2096W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Best Value</span>
+<div class="prod-img has-photo"><img data-imgid="10" src="" alt="Luxpower 5kVA / 5kW Hybrid Inverter 48Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Luxpower</div>
+<div class="prod-title">5kVA / 5kW Hybrid Inverter 48Vdc</div>
+<div class="prod-specs">Single-phase · 48V hybrid · Wall mount</div>
+<div class="prod-price"><span class="p">R 7,935</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('lux-5kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Luxpower%205kVA%20/%205kW%20Hybrid%20Inverter%2048Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Premium</span>
+<div class="prod-img has-photo"><img data-imgid="11" src="" alt="Hello Today LED CE026 Ceiling Light 120W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED CE026 Ceiling Light 120W</div>
+<div class="prod-specs">3 colours · Warm/Natural/Cool · Switches</div>
+<div class="prod-price"><span class="p">R 1,050</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ce026',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%20CE026%20Ceiling%20Light%20120W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Smart</span>
+<div class="prod-img has-photo"><img data-imgid="12" src="" alt="Andowl 4K HD Outdoor Pan/Tilt WiFi Smart Camera" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Andowl</div>
+<div class="prod-title">4K HD Outdoor Pan/Tilt WiFi Smart Camera</div>
+<div class="prod-specs">4K HD · Pan/tilt · Outdoor</div>
+<div class="prod-price"><span class="p">R 1,850</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('andowl-cam',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Andowl%204K%20HD%20Outdoor%20Pan/Tilt%20WiFi%20Smart%20Camera" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="13" src="" alt="Greenrich 5.1kWh 48Vdc WM Lithium LiFePO4" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Greenrich</div>
+<div class="prod-title">5.1kWh 48Vdc WM Lithium LiFePO4</div>
+<div class="prod-specs">48V · Wall-mount · Light Up Africa</div>
+<div class="prod-price"><span class="p">R 15,195</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('greenrich-5',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Greenrich%205.1kWh%2048Vdc%20WM%20Lithium%20LiFePO4" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Best Seller</span>
+<div class="prod-img has-photo"><img data-imgid="14" src="" alt="JA Solar 545W Mono PERC Bifacial Solar Panel" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">JA Solar</div>
+<div class="prod-title">545W Mono PERC Bifacial Solar Panel</div>
+<div class="prod-specs">Bifacial · Tier 1 · 25yr</div>
+<div class="prod-price"><span class="p">R 2,495</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ja-545',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20JA%20Solar%20545W%20Mono%20PERC%20Bifacial%20Solar%20Panel" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+<div style="text-align:center;margin-top:2.5rem"><a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-dark">Browse the Full Catalogue →</a></div>
+</div></section>
+
+<section class="how"><div class="container"><div class="section-head reveal">
+<div class="eyebrow" style="justify-content:center">Simple Process</div>
+<h2>How we work with you.</h2>
+<p>No mystery pricing. No surprises on the day. Three clear steps from first call to commissioned system.</p>
+</div>
+<div class="steps">
+<div class="step reveal"><div class="step-n">01</div><div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div><h3>Browse &amp; Consult</h3><p>Shop online, request a quote, or call us. We listen first — then advise on what actually fits your home or site.</p></div>
+<div class="step reveal"><div class="step-n">02</div><div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></div><h3>Quote &amp; Deliver</h3><p>Fixed-price written quote within 24 hours. Stock collected from Vereeniging or delivered fast across Gauteng.</p></div>
+<div class="step reveal"><div class="step-n">03</div><div class="step-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3>Install &amp; Certify</h3><p>Qualified team on site. Tidy work. COC issued. Monitoring app set up before we leave the property.</p></div>
+</div></div></section>
+<section class="blk"><div class="container">
+<div class="section-head reveal">
+<div class="eyebrow" style="justify-content:center">Real Installations</div>
+<h2>Work we've put our name to.</h2>
+<p>Photos from our recent residential and commercial installs across the Vaal Triangle and Gauteng.</p>
+</div>
+<div class="inst-grid">
+<div class="inst reveal"><div class="inst-img"><img data-imgid="15" src="" alt="Commercial solar carport installation" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Commercial · Retail Centre</div><h3>Solar carport — covered parking array</h3><div class="inst-meta">Custom steel structure · Large PV array · Grid-tie</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="16" src="" alt="Mixed PV and solar thermal installation" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Commercial · Mixed System</div><h3>PV array + solar thermal hot water</h3><div class="inst-meta">16+ PV panels · Evacuated-tube geyser · Heat pump</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="17" src="" alt="Sunsynk container battery bank installation" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Off-Grid Commercial</div><h3>Containerised Sunsynk battery bank</h3><div class="inst-meta">Sunsynk inverter · 20+ battery modules · Remote site</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="18" src="" alt="Modern Vaal Triangle home solar install" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Premium Residential · Vaal Triangle</div><h3>Modern home — multi-array install</h3><div class="inst-meta">Pitched + flat roof arrays · Hybrid · Heat pump</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="19" src="" alt="FMD installation team on site" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Site Team · Off-Grid Project</div><h3>Full crew install — remote site</h3><div class="inst-meta">Full PPE · Hybrid system · Site survey to handover</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="20" src="" alt="Commercial roof solar mounting installation" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Commercial · In Progress</div><h3>Roof rails &amp; mounting install</h3><div class="inst-meta">Full PPE · Rail-mount system · Safety-first</div></div></div>
+
+<div class="inst reveal"><div class="inst-img"><img data-imgid="21" src="" alt="Smallholding solar array on green roof" loading="lazy"></div><div class="inst-overlay"><div class="inst-tag">Smallholding · Family Farm</div><h3>Pitched roof PV array</h3><div class="inst-meta">Multi-string system · Eskom backup · Vaal area</div></div></div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></section>
+<section class="blk" style="background:var(--grey-soft)"><div class="container">
+<div class="section-head reveal">
+<div class="eyebrow" style="justify-content:center">What Customers Say</div>
+<h2>Trust earned, one install at a time.</h2>
+</div>
+<div class="rev-row">
+<div class="rev reveal"><div class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg></div><p>"Quoted on Tuesday, installed on Friday. The team was tidy, on time, and walked me through the monitoring app before they left. No load-shedding stress since."</p><div class="rev-author"><div class="rev-avatar">JV</div><div class="rev-name">Jaco van der Merwe<small>Three Rivers — 5kW hybrid install</small></div></div></div>
+<div class="rev reveal"><div class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg></div><p>"My Deye 8kW tripped after a surge. They diagnosed it in the shop the same day, sorted the warranty claim, and had me running again inside a week. Proper service."</p><div class="rev-author"><div class="rev-avatar">PM</div><div class="rev-name">Pieter Maluleke<small>Vereeniging — inverter repair</small></div></div></div>
+<div class="rev reveal"><div class="rev-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg></div><p>"Bought panels, mounting, and cabling at trade prices for a client job in Heidelberg. Stock was in, paperwork was sorted, and they answered my technical questions like a partner."</p><div class="rev-author"><div class="rev-avatar">TN</div><div class="rev-name">Thabo Ngwenya<small>Registered electrician · Trade Silver</small></div></div></div>
+</div>
+<div class="rev-google reveal"><strong>4.9</strong><div class="rev-google-stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4.5L6 21l1.5-7.5L2 9h7z"/></svg></div><span style="color:var(--grey-mid);font-size:.88rem">based on Google Reviews</span></div>
+</div></section>
+<section class="counters"><div class="container"><div class="counter-grid">
+<div class="counter reveal"><div class="counter-n" data-target="450">0<small>+</small></div><div class="counter-l">Installations Completed</div></div>
+<div class="counter reveal"><div class="counter-n" data-target="1200">0<small>+</small></div><div class="counter-l">Customers Served</div></div>
+<div class="counter reveal"><div class="counter-n" data-target="15">0<small>+</small></div><div class="counter-l">Years Experience</div></div>
+<div class="counter reveal"><div class="counter-n" data-target="98">0<small>%</small></div><div class="counter-l">5-Star Reviews</div></div>
+</div></div></section>
+
+
+
+<section class="blk"><div class="container">
+<div class="section-head reveal"><div class="eyebrow" style="justify-content:center">Authorised Stockist</div><h2>We stock the brands you trust.</h2></div>
+<div class="brand-wall reveal">
+<div class="brand-i brand-sunsynk" onclick="showPage('shop')"><span>SUNSYNK<small>Hybrid Inverters</small></span></div>
+<div class="brand-i brand-luxpower" onclick="showPage('shop')"><span>LUXPOWER<small>Hybrid</small></span></div>
+<div class="brand-i brand-must" onclick="showPage('shop')"><span>Must<small>Inverters</small></span></div>
+<div class="brand-i brand-greenrich" onclick="showPage('shop')"><span>GREENRICH<small>LiFePO4</small></span></div>
+<div class="brand-i brand-svolt" onclick="showPage('shop')"><span>SVolt<small>LiFePO4</small></span></div>
+<div class="brand-i brand-jasolar" onclick="showPage('shop')"><span>JA SOLAR<small>Tier 1 Panels</small></span></div>
+<div class="brand-i brand-canadian" onclick="showPage('shop')"><span>Canadian<small>Solar</small></span></div>
+<div class="brand-i brand-hello" onclick="showPage('shop')"><span>HELLO<small>Today LED</small></span></div>
+</div></div></section>
+
+<section class="fcta"><div class="container"><div class="fcta-grid">
+<div>
+<div class="eyebrow" style="color:var(--gold)"><span style="background:var(--gold);width:28px;height:2px;display:inline-block"></span>Get Started</div>
+<h2>Free quote within 24 hours. No obligation.</h2>
+<p class="fcta-sub">All enquiries route to <strong style="color:var(--gold)">admin@fmdelectrical.co.za</strong> with WhatsApp confirmation.</p>
+<ul class="fcta-list">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>24-hour quote SLA</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Fixed pricing — no hidden costs</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>WhatsApp booking confirmation</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg>Walk in: No 3 Voortrekker Street</li>
+</ul>
+</div>
+<form class="fcta-form" onsubmit="submitLeadCapture(event)">
+<h3>Request a Free Quote</h3>
+<p>Get a written quote within 24 working hours.</p>
+<div class="form-grid two"><div class="form-field"><label>Name</label><input type="text" id="lcName" required></div><div class="form-field"><label>Phone</label><input type="tel" id="lcPhone" required></div></div>
+<div class="form-grid"><div class="form-field"><label>Email</label><input type="email" id="lcEmail" required></div></div>
+<div class="form-grid two"><div class="form-field"><label>Need</label><select id="lcType" required><option value="">Choose…</option><option>Solar installation</option><option>Electrical work</option><option>Inverter repair</option><option>Maintenance</option><option>Products only</option><option>Trade enquiry</option></select></div><div class="form-field"><label>Suburb</label><input type="text" id="lcSuburb"></div></div>
+<div class="form-grid"><div class="form-field"><label>Tell us more</label><textarea id="lcMsg" placeholder="Roof type, Eskom bill estimate, must-have appliances during outages…"></textarea></div></div>
+<button type="submit" class="btn btn-primary form-submit">Send Quote Request</button>
+<p class="form-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>POPIA compliant · Never shared.</p>
+</form>
+</div></div></section>
+</div><!-- SHOP PAGE -->
+<div class="page" id="page-shop">
+<div class="page-hero"><div class="container"><h1>Shop All Products</h1><p>29 products across 6 categories. Click "Add to Cart" — we'll confirm via WhatsApp. EFT or collection welcome.</p></div></div>
+<section class="blk"><div class="container"><div class="cat-nav"><a href="javascript:void(0)" onclick="scrollToCat('inverter')">Inverters (7)</a><a href="javascript:void(0)" onclick="scrollToCat('battery')">Batteries (4)</a><a href="javascript:void(0)" onclick="scrollToCat('panel')">Solar Panels (2)</a><a href="javascript:void(0)" onclick="scrollToCat('ceiling')">Ceiling Lights (4)</a><a href="javascript:void(0)" onclick="scrollToCat('wall')">Wall & Outdoor Lights (6)</a><a href="javascript:void(0)" onclick="scrollToCat('tech')">Electronics & Accessories (6)</a></div><div class="shop-catalogue"><div class="cat-section" id="cat-inverter">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4.09 12.97c-.39.48-.39 1.17 0 1.65L13 22h2l-2-7h7l-7-13h-2z"/></svg></div><div><h2>Inverters</h2><p>7 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge feat">Best Value</span>
+<div class="prod-img has-photo"><img data-imgid="10" src="" alt="Luxpower 5kVA / 5kW Hybrid Inverter 48Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Luxpower</div>
+<div class="prod-title">5kVA / 5kW Hybrid Inverter 48Vdc</div>
+<div class="prod-specs">Single-phase · 48V hybrid · Wall mount</div>
+<div class="prod-price"><span class="p">R 7,935</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('lux-5kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Luxpower%205kVA%20/%205kW%20Hybrid%20Inverter%2048Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">Entry</span>
+<div class="prod-img has-photo"><img data-imgid="25" src="" alt="Must 3kVA / 3kW Hybrid Inverter 24Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Must</div>
+<div class="prod-title">3kVA / 3kW Hybrid Inverter 24Vdc</div>
+<div class="prod-specs">Single-phase · 24V entry-level</div>
+<div class="prod-price"><span class="p">R 4,140</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('must-3kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Must%203kVA%20/%203kW%20Hybrid%20Inverter%2024Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="25" src="" alt="Must 4kVA / 4kW Hybrid Inverter 24Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Must</div>
+<div class="prod-title">4kVA / 4kW Hybrid Inverter 24Vdc</div>
+<div class="prod-specs">Single-phase · 24V hybrid</div>
+<div class="prod-price"><span class="p">R 4,830</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('must-4kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Must%204kVA%20/%204kW%20Hybrid%20Inverter%2024Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="8" src="" alt="Sunsynk 5kVA / 5kW Hybrid Inverter 48Vdc" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">5kVA / 5kW Hybrid Inverter 48Vdc</div>
+<div class="prod-specs">Single-phase · Dual MPPT · 10yr</div>
+<div class="prod-price"><span class="p">R 17,250</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-5kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%205kVA%20/%205kW%20Hybrid%20Inverter%2048Vdc" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Best Seller</span>
+<div class="prod-img has-photo"><img data-imgid="26" src="" alt="Sunsynk 8kVA / 8kW Hybrid Inverter 1P" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">8kVA / 8kW Hybrid Inverter 1P</div>
+<div class="prod-specs">Single-phase · Dual MPPT · 10yr</div>
+<div class="prod-price"><span class="p">R 27,485</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-8kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%208kVA%20/%208kW%20Hybrid%20Inverter%201P" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="26" src="" alt="Sunsynk 10kVA / 10kW Hybrid Inverter 1P" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">10kVA / 10kW Hybrid Inverter 1P</div>
+<div class="prod-specs">Single-phase · Dual MPPT · 10yr</div>
+<div class="prod-price"><span class="p">R 27,725</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-10kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%2010kVA%20/%2010kW%20Hybrid%20Inverter%201P" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Pro</span>
+<div class="prod-img has-photo"><img data-imgid="26" src="" alt="Sunsynk 12kVA / 12kW Hybrid Inverter 1P" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">12kVA / 12kW Hybrid Inverter 1P</div>
+<div class="prod-specs">Single-phase · Dual MPPT · 10yr</div>
+<div class="prod-price"><span class="p">R 42,435</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-12kw',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%2012kVA%20/%2012kW%20Hybrid%20Inverter%201P" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div><div class="cat-section" id="cat-battery">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="18" height="12" rx="2"/><line x1="22" y1="11" x2="22" y2="13"/></svg></div><div><h2>Batteries</h2><p>4 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="13" src="" alt="Greenrich 5.1kWh 48Vdc WM Lithium LiFePO4" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Greenrich</div>
+<div class="prod-title">5.1kWh 48Vdc WM Lithium LiFePO4</div>
+<div class="prod-specs">48V · Wall-mount · Light Up Africa</div>
+<div class="prod-price"><span class="p">R 15,195</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('greenrich-5',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Greenrich%205.1kWh%2048Vdc%20WM%20Lithium%20LiFePO4" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Authorised</span>
+<div class="prod-img has-photo"><img data-imgid="27" src="" alt="Sunsynk 5.32kWh 48Vdc WM Lithium LiFePO4" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">5.32kWh 48Vdc WM Lithium LiFePO4</div>
+<div class="prod-specs">48V · Wall-mount · 10yr warranty</div>
+<div class="prod-price"><span class="p">R 18,515</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-bat-5',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%205.32kWh%2048Vdc%20WM%20Lithium%20LiFePO4" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Premium</span>
+<div class="prod-img has-photo"><img data-imgid="7" src="" alt="Sunsynk 10.2kWh 48Vdc Lithium LiFePO4" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Sunsynk</div>
+<div class="prod-title">10.2kWh 48Vdc Lithium LiFePO4</div>
+<div class="prod-specs">48V · High capacity · 10yr warranty</div>
+<div class="prod-price"><span class="p">R 37,720</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ss-bat-10',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Sunsynk%2010.2kWh%2048Vdc%20Lithium%20LiFePO4" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">Entry</span>
+<div class="prod-img has-photo"><img data-imgid="28" src="" alt="SVolt 2.5kWh 24Vdc LiFePO4 Battery 106Ah" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">SVolt</div>
+<div class="prod-title">2.5kWh 24Vdc LiFePO4 Battery 106Ah</div>
+<div class="prod-specs">24V · 106Ah · Entry-level</div>
+<div class="prod-price"><span class="p">R 7,130</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('svolt-2.5',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20SVolt%202.5kWh%2024Vdc%20LiFePO4%20Battery%20106Ah" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div><div class="cat-section" id="cat-panel">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="14" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="14" x2="21" y2="14"/><line x1="9" y1="4" x2="9" y2="18"/><line x1="15" y1="4" x2="15" y2="18"/></svg></div><div><h2>Solar Panels</h2><p>2 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="29" src="" alt="Canadian Solar 550W HiKu7 Mono PERC Solar Panel" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Canadian Solar</div>
+<div class="prod-title">550W HiKu7 Mono PERC Solar Panel</div>
+<div class="prod-specs">Mono PERC · Tier 1 · 25yr</div>
+<div class="prod-price"><span class="p">R 2,650</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('cs-550',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Canadian%20Solar%20550W%20HiKu7%20Mono%20PERC%20Solar%20Panel" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Best Seller</span>
+<div class="prod-img has-photo"><img data-imgid="14" src="" alt="JA Solar 545W Mono PERC Bifacial Solar Panel" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">JA Solar</div>
+<div class="prod-title">545W Mono PERC Bifacial Solar Panel</div>
+<div class="prod-specs">Bifacial · Tier 1 · 25yr</div>
+<div class="prod-price"><span class="p">R 2,495</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ja-545',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20JA%20Solar%20545W%20Mono%20PERC%20Bifacial%20Solar%20Panel" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div><div class="cat-section" id="cat-ceiling">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"/></svg></div><div><h2>Ceiling Lights</h2><p>4 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge feat">Premium</span>
+<div class="prod-img has-photo"><img data-imgid="11" src="" alt="Hello Today LED CE026 Ceiling Light 120W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED CE026 Ceiling Light 120W</div>
+<div class="prod-specs">3 colours · Warm/Natural/Cool · Switches</div>
+<div class="prod-price"><span class="p">R 1,050</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ce026',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%20CE026%20Ceiling%20Light%20120W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="30" src="" alt="Hello Today LED CE044 Ceiling Light 72W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED CE044 Ceiling Light 72W</div>
+<div class="prod-specs">3 colours · Warm/Natural/Cool · Switches</div>
+<div class="prod-price"><span class="p">R 560</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ce044',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%20CE044%20Ceiling%20Light%2072W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="31" src="" alt="Hello Today LED CE401 Ceiling Light 30W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED CE401 Ceiling Light 30W</div>
+<div class="prod-specs">4 colours · White/Blue/Green/Pink</div>
+<div class="prod-price"><span class="p">R 410</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ce401',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%20CE401%20Ceiling%20Light%2030W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Smart</span>
+<div class="prod-img has-photo"><img data-imgid="9" src="" alt="CEO CEO27 Bluetooth Speaker Ceiling Light 96W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">CEO</div>
+<div class="prod-title">CEO27 Bluetooth Speaker Ceiling Light 96W</div>
+<div class="prod-specs">Bluetooth speaker · 3 colours</div>
+<div class="prod-price"><span class="p">R 775</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('ceo27',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20CEO%20CEO27%20Bluetooth%20Speaker%20Ceiling%20Light%2096W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div><div class="cat-section" id="cat-wall">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18h6l-3 4-3-4z"/><rect x="8" y="2" width="8" height="16" rx="2"/></svg></div><div><h2>Wall & Outdoor Lights</h2><p>6 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="32" src="" alt="Hello Today LED 2406 WW Wall Lamp 6W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED 2406 WW Wall Lamp 6W</div>
+<div class="prod-specs">Warm white · IP54 outdoor</div>
+<div class="prod-price"><span class="p">R 195</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('2406ww',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%202406%20WW%20Wall%20Lamp%206W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Best Seller</span>
+<div class="prod-img has-photo"><img data-imgid="33" src="" alt="Hello Today LED 50W Day/Night Sensor Flood Light" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED 50W Day/Night Sensor Flood Light</div>
+<div class="prod-specs">IP66 · Cool white · Auto sensor</div>
+<div class="prod-price"><span class="p">R 270</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('50w-flood',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%2050W%20Day/Night%20Sensor%20Flood%20Light" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="34" src="" alt="Hello Today 8403/1 SB Outdoor Wall Lamp E27" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">8403/1 SB Outdoor Wall Lamp E27</div>
+<div class="prod-specs">Aluminium · Black · E27 fitting</div>
+<div class="prod-price"><span class="p">R 170</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('8403',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%208403/1%20SB%20Outdoor%20Wall%20Lamp%20E27" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="35" src="" alt="Hello Today 8806 SB Outdoor Wall Lamp E27" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">8806 SB Outdoor Wall Lamp E27</div>
+<div class="prod-specs">Aluminium · Black · IP54 · E27</div>
+<div class="prod-price"><span class="p">R 316</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('8806',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%208806%20SB%20Outdoor%20Wall%20Lamp%20E27" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="36" src="" alt="Hello Today 8912 LED Wall Lamp 20W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">8912 LED Wall Lamp 20W</div>
+<div class="prod-specs">Black · IP54 outdoor rated</div>
+<div class="prod-price"><span class="p">R 170</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('8912',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%208912%20LED%20Wall%20Lamp%2020W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">New</span>
+<div class="prod-img has-photo"><img data-imgid="37" src="" alt="Hello Today LED WL8317 WW Wall Lamp 6W" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hello Today</div>
+<div class="prod-title">LED WL8317 WW Wall Lamp 6W</div>
+<div class="prod-specs">Warm white · Black finish</div>
+<div class="prod-price"><span class="p">R 120</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('wl8317',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hello%20Today%20LED%20WL8317%20WW%20Wall%20Lamp%206W" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div><div class="cat-section" id="cat-tech">
+<div class="cat-head"><div class="cat-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg></div><div><h2>Electronics & Accessories</h2><p>6 products in stock</p></div></div>
+<div class="prod-grid"><article class="prod">
+<span class="prod-badge feat">Smart</span>
+<div class="prod-img has-photo"><img data-imgid="12" src="" alt="Andowl 4K HD Outdoor Pan/Tilt WiFi Smart Camera" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Andowl</div>
+<div class="prod-title">4K HD Outdoor Pan/Tilt WiFi Smart Camera</div>
+<div class="prod-specs">4K HD · Pan/tilt · Outdoor</div>
+<div class="prod-price"><span class="p">R 1,850</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('andowl-cam',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Andowl%204K%20HD%20Outdoor%20Pan/Tilt%20WiFi%20Smart%20Camera" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="38" src="" alt="FMD Mini Desktop Fan" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">FMD</div>
+<div class="prod-title">Mini Desktop Fan</div>
+<div class="prod-specs">Compact · USB powered</div>
+<div class="prod-price"><span class="p">R 80</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('fan-mini',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20FMD%20Mini%20Desktop%20Fan" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="39" src="" alt="Inkwenkwezi Diandi Adjustable Angle Desktop USB Fan" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Inkwenkwezi</div>
+<div class="prod-title">Diandi Adjustable Angle Desktop USB Fan</div>
+<div class="prod-specs">Adjustable · USB powered</div>
+<div class="prod-price"><span class="p">R 110</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('fan-inkwen',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Inkwenkwezi%20Diandi%20Adjustable%20Angle%20Desktop%20USB%20Fan" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge new">In Stock</span>
+<div class="prod-img has-photo"><img data-imgid="40" src="" alt="HD2.OV Premium High Speed HDTV Cable 4K 20M" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">HD2.OV</div>
+<div class="prod-title">Premium High Speed HDTV Cable 4K 20M</div>
+<div class="prod-specs">4K UltraHD · 20-metre length</div>
+<div class="prod-price"><span class="p">R 790</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('hdmi-20m',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20HD2.OV%20Premium%20High%20Speed%20HDTV%20Cable%204K%2020M" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Popular</span>
+<div class="prod-img has-photo"><img data-imgid="41" src="" alt="Hoco Wireless Headphones 40hr Battery" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Hoco</div>
+<div class="prod-title">Wireless Headphones 40hr Battery</div>
+<div class="prod-specs">40h · Bluetooth wireless</div>
+<div class="prod-price"><span class="p">R 550</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('hoco-hp',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Hoco%20Wireless%20Headphones%2040hr%20Battery" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article><article class="prod">
+<span class="prod-badge feat">Camera</span>
+<div class="prod-img has-photo"><img data-imgid="42" src="" alt="Smart Net 8K 4G Solar Smart Camera Real-time Remote View" class="prod-img-real" loading="lazy"><span class="prod-stock">In Stock</span></div>
+<div class="prod-body">
+<div class="prod-brand">Smart Net</div>
+<div class="prod-title">8K 4G Solar Smart Camera Real-time Remote View</div>
+<div class="prod-specs">8K · 4G · Solar powered</div>
+<div class="prod-price"><span class="p">R 1,850</span></div>
+<div class="prod-actions">
+<button class="prod-add" onclick="addToCart('smart-cam',this)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg>Add to Cart</button>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20interested%20in%20the%20Smart%20Net%208K%204G%20Solar%20Smart%20Camera%20Real-time%20Remote%20View" class="prod-wa" target="_blank"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+<p class="prod-more">More variety available — ask in-store sales</p>
+</div></article></div>
+</div></div></div></section>
+</div>
+
+<!-- BLOG INDEX PAGE -->
+<div class="page" id="page-blog">
+<div class="page-hero"><div class="container"><h1>Blog &amp; Knowledge Centre</h1><p>Plain-English guides on sizing, choosing, and getting the most from your solar &amp; electrical system. Full articles written by qualified electricians — no fluff.</p></div></div>
+<section class="blk"><div class="container">
+<div class="blog-grid"><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('size-solar-system')">
+<div class="kn-img"><span class="kn-tag">Sizing Guide</span><img data-imgid="22" src="" alt="Sizing your solar system" loading="lazy"></div>
+<div class="kn-body"><h3>How to size your solar system properly</h3><p>A practical walkthrough — from reading your Eskom bill to choosing the right inverter and battery capacity for South African homes.</p><div class="kn-meta"><span>7 min read</span><span>·</span><span>Beginner</span></div></div>
+</article><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('hybrid-vs-offgrid-vs-gridtie')">
+<div class="kn-img"><span class="kn-tag">Comparison</span><img data-imgid="23" src="" alt="Solar installer fitting a panel" loading="lazy"></div>
+<div class="kn-body"><h3>Hybrid vs Off-grid vs Grid-tie — which suits you?</h3><p>The three system types compared on cost, complexity, and load-shedding behaviour. No jargon, just plain answers for South African buyers.</p><div class="kn-meta"><span>5 min read</span><span>·</span><span>Decision-stage</span></div></div>
+</article><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('loadshedding-survival-kit')">
+<div class="kn-img"><span class="kn-tag">Survival</span><img data-imgid="24" src="" alt="Off-grid solar panels" loading="lazy"></div>
+<div class="kn-body"><h3>Load-shedding survival — minimum kit you need</h3><p>The cheapest practical setup to keep lights, WiFi, fridge and TV running through Stage 6. Real shopping lists at three budget levels.</p><div class="kn-meta"><span>4 min read</span><span>·</span><span>Budget-conscious</span></div></div>
+</article></div>
+</div></section>
+</div>
+
+<div class="page" id="page-blog-size-solar-system">
+<div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Sizing Guide</span><span>7 min read</span><span>·</span><span>Beginner</span></div><h1>How to size your solar system properly</h1><p>A practical walkthrough — from reading your Eskom bill to choosing the right inverter and battery capacity for South African homes.</p></div></div>
+<section class="blk"><div class="container">
+<div class="article-wrap">
+<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<div class="article-body">
+<p>The most common mistake South Africans make when buying solar is basing their decision on what a neighbour bought. A 5kW system that works perfectly for a two-bedroom flat will leave a family-of-four without hot water through a Highveld winter. Right-sizing is not complicated — but it requires twenty minutes with your Eskom bill and an honest look at how your household actually uses electricity.</p>
+<h3>Step 1 — Read your Eskom bill correctly</h3>
+<p>Open your last three municipal or Eskom statements and find the line that reads <strong>kWh consumed</strong> or <strong>units used</strong>. Take one winter bill, one summer, and one mid-season, then average the three. A typical 3-bedroom home in the Vaal Triangle consumes between <strong>450 and 900 kWh per month</strong>. A smallholding with a borehole pump and swimming pool can easily run 1,500 kWh or more. Divide your monthly average by 30 — that is your daily kWh figure, and it drives every decision that follows.</p>
+<h3>Step 2 — Decide what you want solar to do</h3>
+<p>There are three realistic goals, and they cost very different amounts:</p>
+<ul>
+<li><strong>Load-shedding protection only</strong> — keep lights, WiFi, fridge, and TV running through Stage 6. You need 3–5 kWh of battery. Budget: <strong>R30,000–R65,000 installed</strong>.</li>
+<li><strong>Reduce your Eskom bill by 50–70%</strong> — solar generates during the day and charges a battery for evenings. You need a 5–8kW inverter, 8–12 kWh battery, and 6–10 panels. Budget: <strong>R80,000–R145,000 installed</strong>.</li>
+<li><strong>Complete grid independence</strong> — a 10–15kW inverter, 20–40 kWh battery, and 16–28 panels. Budget: <strong>R180,000–R350,000+ installed</strong>.</li>
+</ul>
+<p>Most suburban homeowners land in category two. It delivers the best return on investment and still covers load-shedding completely.</p>
+<h3>Step 3 — Calculate your peak load</h3>
+<p>Walk through your home at the worst-case moment — typically 6pm on a winter weekday. Add up everything running at once: LED lights (200W), TV (120W), WiFi router (15W), fridge (150W), microwave (1,500W), kettle (2,000W). Add 20–30% for motor surge currents. That total is your <strong>peak load in watts</strong>, and your inverter must be rated above it. If your peak is 4,200W, you need at minimum a 5kW inverter. An electric geyser on the same circuit adds another 2,000–3,000W — most installers recommend a geyser timer or heat pump to keep inverter size and cost manageable.</p>
+<h3>Step 4 — Size your battery bank</h3>
+<p>Divide your planned overnight consumption by your battery's usable percentage — 80% for lithium, 50% for lead-acid. If you need 8 kWh of real overnight energy and you are using lithium, you need a <strong>10 kWh nominal battery bank</strong>. For two days of autonomy, double it. Our standard recommendation for a 3-bedroom Vaal Triangle home targeting 70% Eskom independence is a <strong>10–15 kWh lithium battery paired with a 5–8kW hybrid inverter</strong>.</p>
+<h3>Step 5 — Size the solar panel array</h3>
+<p>Gauteng averages 5.5 peak sun hours in summer and 4.5 in winter — better than most South African provinces. A rough rule: you need roughly <strong>1 kW of panels per 1 kWh of battery</strong> you want to fully recharge daily. A 10 kWh battery needs at least 10 panels rated 400–545W each. Add 20–30% for shading losses, dust, and panel degradation. For a typical 3-bedroom home, <strong>8–12 panels of 400–545W</strong> is the usual starting point.</p>
+<h3>Don't forget the geyser</h3>
+<p>Your electric geyser accounts for 30–40% of your monthly electricity bill — a 3,000W element running 2–3 hours per day. The two sensible solutions: a <strong>solar geyser or heat pump</strong> to remove it from the inverter circuit entirely, or a <strong>smart geyser timer</strong> that runs it only during peak solar production hours (10am–2pm). Either approach significantly reduces your required battery size and overall system cost.</p>
+<h3>Always get a written, itemised quote</h3>
+<p>Any reputable installer will provide a quote specifying inverter make and model, battery brand and chemistry, panel wattage and quantity, and full cable and mounting specifications. If a quote does not include every one of those items, ask for a revised one. A Certificate of Compliance (COC) must also be included in your installation contract — it is a legal requirement and your insurance company can decline a claim without it.</p>
+<div class="article-cta"><h3>Ready to size your system properly?</h3><p>Our team will assess your Eskom bills, your roof, and your load profile — and give you a written quote within 24 hours.</p>
+<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Free Quote</a>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27d%20like%20help%20sizing%20my%20solar%20system" target="_blank" class="btn btn-wa">WhatsApp Us</a></div>
+</div>
+</div>
+</div></section>
+</div><div class="page" id="page-blog-hybrid-vs-offgrid-vs-gridtie">
+<div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Comparison</span><span>5 min read</span><span>·</span><span>Decision-stage</span></div><h1>Hybrid vs Off-grid vs Grid-tie — which suits you?</h1><p>The three system types compared on cost, complexity, and load-shedding behaviour. No jargon, just plain answers for South African buyers.</p></div></div>
+<section class="blk"><div class="container">
+<div class="article-wrap">
+<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<div class="article-body">
+<p>Walk into any solar showroom in South Africa and you will hear three terms used interchangeably: hybrid, off-grid, and grid-tie. They are not the same thing. Getting the distinction wrong can cost you tens of thousands of rands in equipment you either cannot use or should not have bought. Here is a plain-language breakdown of all three.</p>
+<h3>Grid-Tie — lowest cost, zero load-shedding protection</h3>
+<p>A grid-tie system connects directly to the Eskom grid and uses solar panels to offset your daytime consumption in real time. When your panels produce more power than you need, the excess is exported back to the grid. <strong>The catch:</strong> grid-tie inverters are legally required to shut down the moment Eskom goes down — a safety mechanism to protect grid workers. Your panels can be shining brilliantly while your house is dark because the grid is down. This makes a pure grid-tie system a poor choice for most South African homes under the current load-shedding environment.</p>
+<p><strong>Typical installed cost:</strong> R25,000–R60,000 for a 3–5kW system. Best suited to businesses with massive daytime electricity bills in areas with very reliable power.</p>
+<h3>Hybrid — the sweet spot for most South African homes</h3>
+<p>A hybrid inverter combines a solar charger, a battery inverter, and a grid connection in one unit. During a sunny day it runs your home on solar, charges your batteries, and tops up from Eskom only when production falls short. During load-shedding it disconnects from the grid and runs your home on solar and battery — seamlessly, usually within 20 milliseconds. When Eskom returns, it reconnects and resumes charging automatically.</p>
+<p>A hybrid system lets you start with a smaller battery bank and add capacity later. You are not over-investing upfront, and you keep your Eskom connection as a genuine backup. For Vaal Triangle homes dealing with Stage 4–6 load-shedding, <strong>this is the standard FMD recommendation</strong>.</p>
+<p><strong>Popular brands we stock and install:</strong> Sunsynk, Deye, Luxpower, and Must — all compatible with SA grid standards and most 48V lithium battery banks.</p>
+<p><strong>Typical installed cost:</strong> R80,000–R150,000 for a 5–8kW hybrid with 10 kWh lithium battery and 8–10 panels. Return on investment: 4–7 years.</p>
+<h3>Off-Grid — maximum independence, maximum cost</h3>
+<p>An off-grid system has no Eskom connection at all. You generate, store, and consume entirely your own electricity. The system must be engineered for the worst case: shortest day, cloudiest week, highest consumption moment. That means a significantly larger battery bank, panel array, and inverter than an equivalent hybrid. You also typically need a generator as emergency backup for extended bad weather.</p>
+<p>For a typical 3-bedroom SA home, a realistic off-grid spec starts at <strong>10kW inverter capacity, 20–30 kWh battery storage, and 16–24 panels</strong> — roughly double the equipment of a well-specified hybrid. For a suburban home in Vereeniging or Three Rivers, off-grid is almost always the wrong financial decision. It makes genuine sense only for rural properties with no grid access, remote smallholdings, or game lodges.</p>
+<p><strong>Typical installed cost:</strong> R180,000–R350,000+.</p>
+<h3>Quick comparison</h3>
+<ul>
+<li><strong>Grid-Tie:</strong> Lowest cost · No load-shedding protection · Reduces daytime Eskom bill only</li>
+<li><strong>Hybrid:</strong> Mid-range cost · Full load-shedding protection · Expandable · Best ROI · FMD recommendation</li>
+<li><strong>Off-Grid:</strong> Highest cost · No Eskom dependency · Right for rural/no-grid properties only</li>
+</ul>
+<h3>Lithium vs lead-acid batteries</h3>
+<p>Whatever system type you choose, lithium (LiFePO4) is now the correct default. It offers 80% usable depth of discharge vs 50% for lead-acid, a 10-year warranty vs 3–5 years, and zero maintenance. We stock Sunsynk, Greenrich, and Hubble lithium batteries — all compatible with the inverters we install.</p>
+<div class="article-cta"><h3>Not sure which system is right for your property?</h3><p>Tell us your Eskom bill average and your address — we will recommend the right system and give you a written quote within 24 hours.</p>
+<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Free Assessment</a>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20deciding%20between%20hybrid%20and%20off-grid" target="_blank" class="btn btn-wa">WhatsApp a Question</a></div>
+</div>
+</div>
+</div></section>
+</div><div class="page" id="page-blog-loadshedding-survival-kit">
+<div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Survival</span><span>4 min read</span><span>·</span><span>Budget-conscious</span></div><h1>Load-shedding survival — minimum kit you need</h1><p>The cheapest practical setup to keep lights, WiFi, fridge and TV running through Stage 6. Real shopping lists at three budget levels.</p></div></div>
+<section class="blk"><div class="container">
+<div class="article-wrap">
+<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<div class="article-body">
+<p>Stage 6 load-shedding means four-hour blackouts twice a day. No hot water, no WiFi, no security system, no way to charge your phone. A practical load-shedding setup does not require a full solar installation — here is exactly what you need, in order of priority, with realistic costs.</p>
+<h3>Priority 1 — Lights and WiFi (R8,000–R15,000)</h3>
+<p>The minimum viable setup is a portable lithium power station (1,000–2,000Wh) paired with LED lights and your router. It runs 6 LED bulbs, your WiFi, and keeps phones and laptops charged through a 4-hour outage. These units charge from the wall between outages and need no installation. <strong>Also switch to LED globes throughout your home</strong> — they draw 80% less power than incandescent bulbs, which stretches your battery capacity enormously.</p>
+<h3>Priority 2 — Save your fridge and freezer (R25,000–R50,000)</h3>
+<p>A fridge compressor surges to 3–5x its rated wattage at startup. To run a fridge reliably you need an inverter rated well above 1,000W. The practical minimum for fridge, lights, and WiFi through Stage 6 is a <strong>2–3kW inverter with a 3–5 kWh lithium battery</strong>. No solar panels required at this stage — the battery charges from the wall between outages. Panels can be added later when budget allows.</p>
+<h3>Priority 3 — Security system and electric fence</h3>
+<p>Load-shedding and opportunistic crime are correlated. Most alarm panels have a 4–8 hour internal battery — electric fence energisers usually have nothing. The fix: connect your security equipment to the same inverter-battery setup as your fridge. Your battery bank can run an alarm panel, energiser, and IP cameras indefinitely. A licensed electrician must move your security circuits to the inverter output — this is not a DIY job.</p>
+<h3>Priority 4 — Work-from-home internet</h3>
+<p>A WiFi router draws 15–25W. A fibre ONT box draws 10W. A laptop draws 45–65W. Your entire home office setup draws under 150W total. Even a modest 1kWh battery runs all of that for 6+ hours. If you already have an inverter-battery setup from Priority 2, simply connect your router and laptop to the inverter output.</p>
+<h3>Priority 5 — Hot water without Eskom (R8,000–R25,000)</h3>
+<p>Your electric geyser draws 2,000–3,000W for 2–3 hours per day — running it off a battery is expensive. The better alternatives:</p>
+<ul>
+<li><strong>Gas geyser (instantaneous)</strong> — R3,500–R8,000 installed. No electricity required. Hot water on demand. Fully Eskom-independent.</li>
+<li><strong>Solar geyser (evacuated tube)</strong> — R12,000–R22,000 installed. Uses sunlight directly, no inverter involved. Ideal for Gauteng's climate.</li>
+<li><strong>Heat pump</strong> — R15,000–R25,000 installed. Uses 800–1,200W to produce 3–4x that in heat. Most efficient but highest upfront cost.</li>
+</ul>
+<p>FMD supplies and installs all three. In the Vereeniging area we most often recommend the evacuated-tube solar geyser as the primary hot water solution.</p>
+<h3>What NOT to buy</h3>
+<ul>
+<li><strong>Unbranded inverters with no SA support</strong> — if it fails, there is no warranty path. Stick to Sunsynk, Deye, Luxpower, Must, or Victron.</li>
+<li><strong>Lead-acid batteries for a permanent setup</strong> — cheap upfront, expensive over time. Only 50% usable capacity, 3–5 year lifespan vs 10 years for lithium.</li>
+<li><strong>Generators as a primary solution</strong> — daily petrol cost, oil changes, noise, and fumes. Keep them as last-resort emergency backup only.</li>
+</ul>
+<h3>Build it in stages</h3>
+<p>Start with lights and WiFi. Add a proper inverter-battery for fridge and security. Add solar panels to recharge for free and reduce your Eskom draw. Add a solar geyser or heat pump last. Each stage delivers immediate value — and each one makes the next stage cheaper to add.</p>
+<div class="article-cta"><h3>Come into the FMD shop in Vereeniging</h3><p>No 3 Voortrekker Street. We stock inverters, lithium batteries, solar panels, LED lighting, and gas geysers — and our team will help you build a kit that fits your budget.</p>
+<a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-primary">Browse Our Stock</a>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%20need%20a%20load-shedding%20kit%20recommendation" target="_blank" class="btn btn-wa">WhatsApp for Advice</a></div>
+</div>
+</div>
+</div></section>
+</div>
+
+<!-- CART PAGE -->
+<div class="page" id="page-cart">
+<div class="page-hero"><div class="container"><h1>Your Cart</h1><p>Review your items, then send the order to FMD via WhatsApp or email. No payment taken online.</p></div></div>
+<section class="blk"><div class="container">
+<div class="cart-grid">
+<div class="cart-items" id="cartItems"></div>
+<aside class="cart-summary" id="cartSummary"></aside>
+</div></div></section>
+</div>
+
+<!-- ACCOUNT PAGE -->
+<div class="page" id="page-account">
+<div class="page-hero"><div class="container"><h1 id="accountTitle">My Account</h1><p id="accountSubtitle">Save your details so future orders pre-fill automatically.</p></div></div>
+<section class="blk"><div class="container"><div id="accountContent"></div></div></section>
+</div>
+
+<!-- SERVICES PAGE -->
+<div class="page" id="page-services">
+<div class="page-hero"><div class="container"><h1>Services &amp; Installations</h1><p>Solar, electrical, inverter repair, maintenance &amp; compliance across the Vaal Triangle and Gauteng.</p></div></div>
+<section class="blk"><div class="container" style="max-width:900px">
+<h2 style="margin-bottom:1rem">Solar Installations</h2>
+<p style="margin-bottom:1rem">Full PV systems for South African homes and businesses — designed around your actual energy use, your roof type, and load-shedding survival. We do the site survey, the design, the sourcing, the install, and the COC.</p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Solar Quote</a> <a href="https://wa.me/27817033912" target="_blank" class="btn btn-wa"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg>WhatsApp</a></p>
+<h2 style="margin-bottom:1rem">Electrical Services</h2>
+<p style="margin-bottom:1rem">From a tripped DB at midnight to a complete house re-wire. Our team handles residential, commercial, and light industrial electrical work — to SANS 10142-1 and the Electrical Installation Regulations.</p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get an Electrical Quote</a> <a href="tel:+27817033912" class="btn btn-dark">Call 081 703 3912</a></p>
+<h2 style="margin-bottom:1rem">Inverter Repair</h2>
+<p style="margin-bottom:1rem">We diagnose and we fix — most major SA inverter brands. Bring yours to our Vereeniging shop. Free diagnosis on Sunsynk, Deye, Luxpower and Must.</p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Book a Diagnosis</a></p>
+<h2 style="margin-bottom:1rem">Maintenance &amp; Compliance</h2>
+<p style="margin-bottom:1rem">Annual electrical inspections, solar panel cleaning, surge protection upgrades, and COC renewals — required when selling property or for insurance.</p>
+<p><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Book Maintenance</a></p>
+</div></section>
+</div>
+
+<!-- QUOTE PAGE -->
+<div class="page" id="page-quote">
+<div class="page-hero"><div class="container"><h1>Get a Free Quote</h1><p>24-hour quote SLA · All enquiries to admin@fmdelectrical.co.za with WhatsApp confirmation</p></div></div>
+<section class="blk"><div class="container" style="max-width:720px">
+<form class="auth-card" onsubmit="submitQuote(event)">
+<div class="form-field"><label>Your Name *</label><input type="text" id="qName" required></div>
+<div class="form-field"><label>Phone (best on WhatsApp) *</label><input type="tel" id="qPhone" required></div>
+<div class="form-field"><label>Email *</label><input type="email" id="qEmail" required></div>
+<div class="form-field"><label>What do you need? *</label><select id="qType" required><option value="">Choose…</option><option>Solar installation</option><option>Electrical work</option><option>Inverter repair</option><option>Maintenance / compliance</option><option>Product quote only</option><option>Trade enquiry</option></select></div>
+<div class="form-field"><label>Suburb</label><input type="text" id="qSuburb"></div>
+<div class="form-field"><label>Tell us more</label><textarea id="qMsg" rows="4"></textarea></div>
+<button type="submit" class="btn btn-primary" style="width:100%">Send Quote Request</button>
+</form>
+</div></section>
+</div>
+
+<!-- ABOUT PAGE -->
+<div class="page" id="page-about">
+<div class="page-hero"><div class="container"><h1>About FMD Electrical</h1><p>Electrical, security and solar systems specialist.</p></div></div>
+<section class="blk"><div class="container" style="max-width:900px">
+<h2 style="margin-bottom:1rem">Who we are</h2>
+<p style="margin-bottom:1rem">Welcome to FMD Electrical (Pty) Ltd — your premier destination for top-notch electrical services in the Vaal Triangle. From routine maintenance and repairs to complex solar installations and electrical upgrades, our team of skilled professionals delivers superior solutions.</p>
+<p style="margin-bottom:1.5rem"><strong>All our employees are qualified and experienced within their field.</strong> Every job is completed to the highest South African electrical standards, with a Certificate of Compliance issued where required.</p>
+<p style="margin-bottom:1.5rem;padding:1rem 1.25rem;border-left:4px solid var(--gold);background:var(--grey-soft);border-radius:var(--r);font-style:italic"><strong>Trade expertise. Trusted supply. Real installations.</strong><br>We install it, we supply it, we support it.</p>
+<a href="javascript:void(0)" onclick="showPage('contact')" class="btn btn-primary">Get in Touch →</a>
+</div></section>
+</div>
+
+<!-- CONTACT PAGE -->
+<div class="page" id="page-contact">
+<div class="page-hero"><div class="container"><h1>Contact FMD</h1><p>Walk in, call, WhatsApp, or email. All enquiries answered same working day.</p></div></div>
+<section class="blk"><div class="container" style="max-width:900px">
+<div style="display:grid;grid-template-columns:1fr;gap:1rem;margin-bottom:2rem">
+<a href="tel:+27164540035" style="background:linear-gradient(135deg,#fff,var(--grey-soft));border:1px solid var(--grey-line);border-radius:var(--r);padding:1.5rem;text-align:center;display:block"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32" style="color:var(--electric);margin:0 auto .5rem"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><strong style="display:block;font-family:var(--ff-d);color:var(--navy);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em">Call Us</strong><span style="font-family:var(--ff-d);font-weight:700;font-size:1.05rem">016 454 0035</span></a>
+<a href="https://wa.me/27817033912" target="_blank" style="background:linear-gradient(135deg,#fff,var(--grey-soft));border:1px solid var(--grey-line);border-radius:var(--r);padding:1.5rem;text-align:center;display:block;color:var(--wa)"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg><strong style="display:block;font-family:var(--ff-d);color:var(--navy);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;margin-top:.5rem">WhatsApp</strong><span style="font-family:var(--ff-d);font-weight:700;font-size:1.05rem;color:var(--charcoal)">081 703 3912</span></a>
+<a href="mailto:admin@fmdelectrical.co.za" style="background:linear-gradient(135deg,#fff,var(--grey-soft));border:1px solid var(--grey-line);border-radius:var(--r);padding:1.5rem;text-align:center;display:block"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32" style="color:var(--electric);margin:0 auto .5rem"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><strong style="display:block;font-family:var(--ff-d);color:var(--navy);font-size:.78rem;text-transform:uppercase;letter-spacing:.06em">Email</strong><span style="font-family:var(--ff-d);font-weight:700;font-size:.9rem">admin@fmdelectrical.co.za</span></a>
+</div>
+<div style="background:linear-gradient(135deg,var(--navy),var(--electric));color:#fff;border-radius:var(--r-lg);padding:2rem;text-align:center">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="32" height="32" style="margin:0 auto 1rem"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+<h3 style="color:#fff;margin-bottom:.5rem">Visit Our Shop</h3>
+<p style="margin-bottom:1rem">No 3 Voortrekker Street<br>Vereeniging, Gauteng, RSA</p>
+<p style="color:rgba(255,255,255,.8);font-size:.88rem">Mon–Fri 07:30–17:00 · Sat 08:00–13:00</p>
+</div>
+</div></section>
+</div>
+
+<!-- FOOTER -->
+<footer class="ft"><div class="container">
+<div class="ft-grid">
+<div class="ft-brand"><img data-imgid="0" src="" alt="FMD"><p>Electrical, security and solar systems specialist. We install it, we supply it, we support it.</p>
+<ul class="ft-contact">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>No 3 Voortrekker Street,<br>Vereeniging, Gauteng, RSA</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+27164540035">016 454 0035</a></li>
+<li><svg viewBox="0 0 32 32" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;margin-top:3px"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Z"/></svg><a href="https://wa.me/27817033912" target="_blank">WhatsApp: 081 703 3912</a></li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:admin@fmdelectrical.co.za">admin@fmdelectrical.co.za</a></li>
+</ul></div>
+<div><h4>Shop</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('shop')">Shop All</a></li><li><a href="javascript:void(0)" onclick="showPage('cart')">Cart</a></li><li><a href="javascript:void(0)" onclick="showPage('services')">Services</a></li><li><a href="javascript:void(0)" onclick="showPage('quote')">Get a Quote</a></li></ul></div>
+<div><h4>Knowledge</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('blog')">Blog Home</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('size-solar-system')">System Sizing Guide</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('hybrid-vs-offgrid-vs-gridtie')">Hybrid vs Off-grid</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('loadshedding-survival-kit')">Load-shedding Survival</a></li></ul></div>
+<div><h4>Company</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li><li><a href="javascript:void(0)" onclick="showPage('account')">My Account</a></li></ul></div>
+</div></div>
+<div class="ft-bottom"><div class="container"><div class="ft-bottom-inner">
+<div>© 2026 FMD Electrical (Pty) Ltd · Vereeniging · South Africa</div>
+<div class="ft-credit">Website created &amp; maintained by <a href="https://autosageai.co.za" target="_blank" rel="noopener">AutoSageAI.co.za</a></div>
+</div></div></div>
+</footer>
+
+<!-- MOBILE BOTTOM NAV -->
+<nav class="mbn">
+<a href="javascript:void(0)" onclick="showPage('home')" data-mnav="home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg><span>Home</span></a>
+<a href="javascript:void(0)" onclick="showPage('shop')" data-mnav="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span>Shop</span></a>
+<a href="https://wa.me/27817033912" target="_blank" style="color:var(--wa)"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg><span>WhatsApp</span></a>
+<a href="javascript:void(0)" onclick="showPage('cart')" data-mnav="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="mbn-badge" id="mbnBadge">0</span><span>Cart</span></a>
+<a href="javascript:void(0)" onclick="showPage('account')" data-mnav="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Account</span></a>
+</nav>
+
+<div class="wa-float">
+<div class="wa-tooltip">Need Help?</div>
+<a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27d%20like%20some%20help" target="_blank" class="wa-btn"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg></a>
+</div>
+
+
+
+<script src="script.js" defer></script>
+</body>
+</html>
