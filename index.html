@@ -18,19 +18,19 @@
 </div></div>
 
 <header class="hdr"><div class="container"><div class="hdr-inner">
-<a href="javascript:void(0)" onclick="showPage('home')" class="brand"><img data-imgid="0" src="" alt="FMD Electrical (Pty) Ltd"></a>
+<a href="javascript:void(0)" data-page="home" class="brand"><img data-imgid="0" src="" alt="FMD Electrical (Pty) Ltd"></a>
 <nav class="nav">
-<a href="javascript:void(0)" onclick="showPage('home')" data-nav="home" class="active">Home</a>
-<a href="javascript:void(0)" onclick="showPage('shop')" data-nav="shop">Shop</a>
-<a href="javascript:void(0)" onclick="showPage('services')" data-nav="services">Services</a>
-<a href="javascript:void(0)" onclick="showPage('blog')" data-nav="blog">Blog</a>
-<a href="javascript:void(0)" onclick="showPage('about')" data-nav="about">About</a>
-<a href="javascript:void(0)" onclick="showPage('contact')" data-nav="contact">Contact</a>
+<a href="javascript:void(0)" data-page="home" data-nav="home" class="active">Home</a>
+<a href="javascript:void(0)" data-page="shop" data-nav="shop">Shop</a>
+<a href="javascript:void(0)" data-page="services" data-nav="services">Services</a>
+<a href="javascript:void(0)" data-page="blog" data-nav="blog">Blog</a>
+<a href="javascript:void(0)" data-page="about" data-nav="about">About</a>
+<a href="javascript:void(0)" data-page="contact" data-nav="contact">Contact</a>
 </nav>
 <div class="hdr-actions">
-<a href="javascript:void(0)" onclick="showPage('account')" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
-<a href="javascript:void(0)" onclick="showPage('cart')" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span class="cart-badge" id="cartBadge">0</span></a>
-<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary cta-q">Get a Quote</a>
+<a href="javascript:void(0)" data-page="account" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+<a href="javascript:void(0)" data-page="cart" class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span class="cart-badge" id="cartBadge">0</span></a>
+<a href="javascript:void(0)" data-page="quote" class="btn btn-primary cta-q">Get a Quote</a>
 <button class="m-toggle" id="mOpen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
 </div></div></div></header>
 
@@ -38,15 +38,15 @@
 <aside class="m-drawer" id="mDrawer">
 <div class="m-head"><img data-imgid="0" src="" alt="FMD" style="height:38px"><button class="m-close" id="mClose">✕</button></div>
 <nav class="m-nav">
-<a href="javascript:void(0)" onclick="showPage('home');closeDrawer()">Home</a>
-<a href="javascript:void(0)" onclick="showPage('shop');closeDrawer()">Shop All Products</a>
-<a href="javascript:void(0)" onclick="showPage('services');closeDrawer()">Services &amp; Installations</a>
-<a href="javascript:void(0)" onclick="showPage('blog');closeDrawer()">📖 Blog / Knowledge Centre</a>
-<a href="javascript:void(0)" onclick="showPage('about');closeDrawer()">About FMD</a>
-<a href="javascript:void(0)" onclick="showPage('contact');closeDrawer()">Contact</a>
-<a href="javascript:void(0)" onclick="showPage('quote');closeDrawer()">Get a Quote</a>
-<a href="javascript:void(0)" onclick="showPage('cart');closeDrawer()">Cart</a>
-<a href="javascript:void(0)" onclick="showPage('account');closeDrawer()">My Account</a>
+<a href="javascript:void(0)" data-page="home">Home</a>
+<a href="javascript:void(0)" data-page="shop">Shop All Products</a>
+<a href="javascript:void(0)" data-page="services">Services &amp; Installations</a>
+<a href="javascript:void(0)" data-page="blog">📖 Blog / Knowledge Centre</a>
+<a href="javascript:void(0)" data-page="about">About FMD</a>
+<a href="javascript:void(0)" data-page="contact">Contact</a>
+<a href="javascript:void(0)" data-page="quote">Get a Quote</a>
+<a href="javascript:void(0)" data-page="cart">Cart</a>
+<a href="javascript:void(0)" data-page="account">My Account</a>
 </nav>
 <div class="m-contact">
 <a href="tel:+27164540035">📞 016 454 0035</a>
@@ -63,8 +63,8 @@
 <h1>Trade expertise. Trusted supply. <span class="accent">Real installations.</span></h1>
 <p class="hero-sub">Electrical, security and solar systems specialist. We install it, we supply it, we support it — backed by qualified electricians, PV GreenCard certification, and a real shop you can walk into at No 3 Voortrekker Street, Vereeniging.</p>
 <div class="hero-ctas">
-<a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-primary">Shop Online →</a>
-<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-glass">Book a Site Visit</a>
+<a href="javascript:void(0)" data-page="shop" class="btn btn-primary">Shop Online →</a>
+<a href="javascript:void(0)" data-page="quote" class="btn btn-glass">Book a Site Visit</a>
 <a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27d%20like%20to%20get%20a%20quote" target="_blank" class="btn btn-wa"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Z"/></svg>WhatsApp</a>
 </div>
 <div class="hero-trust">
@@ -97,10 +97,10 @@
 <section class="blk"><div class="container">
 <div class="section-head reveal"><div class="eyebrow" style="justify-content:center">What We Do</div><h2>One team. Every step of your electrical &amp; solar work.</h2><p>From a tripped DB at midnight to a complete off-grid solar build — we install it, we supply the parts, and we stand behind the work with a COC.</p></div>
 <div class="svc-grid">
-<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="3" src="" alt="FMD Solar Installation in Vereeniging" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"/></svg></div><h3>Solar Installations</h3><p>Full PV systems — survey, design, supply, install, monitoring app setup, COC.</p><span class="btn-link">Explore Solar →</span></div></div>
-<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="4" src="" alt="FMD Electrical Services — DB boards, wiring, lighting" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4.09 12.97c-.39.48-.39 1.17 0 1.65L13 22h2l-2-7h7l-7-13h-2z"/></svg></div><h3>Electrical Services</h3><p>From a tripped DB to a full re-wire. Fault-finding, new installs, repairs.</p><span class="btn-link">Explore Electrical →</span></div></div>
-<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="5" src="" alt="FMD Inverter Repair and Installation" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3>Inverter Repair</h3><p>We diagnose and we fix — most major brands. Free diagnosis on supported units.</p><span class="btn-link">Book Repair →</span></div></div>
-<div class="svc reveal" onclick="showPage('services')"><div class="svc-img"><img data-imgid="6" src="" alt="FMD Maintenance and Compliance Inspection" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Maintenance &amp; Compliance</h3><p>Annual checks, panel cleaning, surge protection, COC renewals.</p><span class="btn-link">Book Maintenance →</span></div></div>
+<div class="svc reveal" data-page="services"><div class="svc-img"><img data-imgid="3" src="" alt="FMD Solar Installation in Vereeniging" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2"/></svg></div><h3>Solar Installations</h3><p>Full PV systems — survey, design, supply, install, monitoring app setup, COC.</p><span class="btn-link">Explore Solar →</span></div></div>
+<div class="svc reveal" data-page="services"><div class="svc-img"><img data-imgid="4" src="" alt="FMD Electrical Services — DB boards, wiring, lighting" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L4.09 12.97c-.39.48-.39 1.17 0 1.65L13 22h2l-2-7h7l-7-13h-2z"/></svg></div><h3>Electrical Services</h3><p>From a tripped DB to a full re-wire. Fault-finding, new installs, repairs.</p><span class="btn-link">Explore Electrical →</span></div></div>
+<div class="svc reveal" data-page="services"><div class="svc-img"><img data-imgid="5" src="" alt="FMD Inverter Repair and Installation" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div><h3>Inverter Repair</h3><p>We diagnose and we fix — most major brands. Free diagnosis on supported units.</p><span class="btn-link">Book Repair →</span></div></div>
+<div class="svc reveal" data-page="services"><div class="svc-img"><img data-imgid="6" src="" alt="FMD Maintenance and Compliance Inspection" loading="lazy"></div><div class="svc-content"><div class="svc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Maintenance &amp; Compliance</h3><p>Annual checks, panel cleaning, surge protection, COC renewals.</p><span class="btn-link">Book Maintenance →</span></div></div>
 </div></div></section>
 
 <section class="blk" style="background:var(--grey-soft)"><div class="container">
@@ -210,7 +210,7 @@
 </div>
 <p class="prod-more">More variety available — ask in-store sales</p>
 </div></article></div>
-<div style="text-align:center;margin-top:2.5rem"><a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-dark">Browse the Full Catalogue →</a></div>
+<div style="text-align:center;margin-top:2.5rem"><a href="javascript:void(0)" data-page="shop" class="btn btn-dark">Browse the Full Catalogue →</a></div>
 </div></section>
 
 <section class="how"><div class="container"><div class="section-head reveal">
@@ -275,14 +275,14 @@
 <section class="blk"><div class="container">
 <div class="section-head reveal"><div class="eyebrow" style="justify-content:center">Authorised Stockist</div><h2>We stock the brands you trust.</h2></div>
 <div class="brand-wall reveal">
-<div class="brand-i brand-sunsynk" onclick="showPage('shop')"><span>SUNSYNK<small>Hybrid Inverters</small></span></div>
-<div class="brand-i brand-luxpower" onclick="showPage('shop')"><span>LUXPOWER<small>Hybrid</small></span></div>
-<div class="brand-i brand-must" onclick="showPage('shop')"><span>Must<small>Inverters</small></span></div>
-<div class="brand-i brand-greenrich" onclick="showPage('shop')"><span>GREENRICH<small>LiFePO4</small></span></div>
-<div class="brand-i brand-svolt" onclick="showPage('shop')"><span>SVolt<small>LiFePO4</small></span></div>
-<div class="brand-i brand-jasolar" onclick="showPage('shop')"><span>JA SOLAR<small>Tier 1 Panels</small></span></div>
-<div class="brand-i brand-canadian" onclick="showPage('shop')"><span>Canadian<small>Solar</small></span></div>
-<div class="brand-i brand-hello" onclick="showPage('shop')"><span>HELLO<small>Today LED</small></span></div>
+<div class="brand-i brand-sunsynk" data-page="shop"><span>SUNSYNK<small>Hybrid Inverters</small></span></div>
+<div class="brand-i brand-luxpower" data-page="shop"><span>LUXPOWER<small>Hybrid</small></span></div>
+<div class="brand-i brand-must" data-page="shop"><span>Must<small>Inverters</small></span></div>
+<div class="brand-i brand-greenrich" data-page="shop"><span>GREENRICH<small>LiFePO4</small></span></div>
+<div class="brand-i brand-svolt" data-page="shop"><span>SVolt<small>LiFePO4</small></span></div>
+<div class="brand-i brand-jasolar" data-page="shop"><span>JA SOLAR<small>Tier 1 Panels</small></span></div>
+<div class="brand-i brand-canadian" data-page="shop"><span>Canadian<small>Solar</small></span></div>
+<div class="brand-i brand-hello" data-page="shop"><span>HELLO<small>Today LED</small></span></div>
 </div></div></section>
 
 <section class="fcta"><div class="container"><div class="fcta-grid">
@@ -713,13 +713,13 @@
 <div class="page" id="page-blog">
 <div class="page-hero"><div class="container"><h1>Blog &amp; Knowledge Centre</h1><p>Plain-English guides on sizing, choosing, and getting the most from your solar &amp; electrical system. Full articles written by qualified electricians — no fluff.</p></div></div>
 <section class="blk"><div class="container">
-<div class="blog-grid"><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('size-solar-system')">
+<div class="blog-grid"><article class="kn blog-card" role="button" style="cursor:pointer" data-blog="size-solar-system">
 <div class="kn-img"><span class="kn-tag">Sizing Guide</span><img data-imgid="22" src="" alt="Sizing your solar system" loading="lazy"></div>
 <div class="kn-body"><h3>How to size your solar system properly</h3><p>A practical walkthrough — from reading your Eskom bill to choosing the right inverter and battery capacity for South African homes.</p><div class="kn-meta"><span>7 min read</span><span>·</span><span>Beginner</span></div></div>
-</article><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('hybrid-vs-offgrid-vs-gridtie')">
+</article><article class="kn blog-card" role="button" style="cursor:pointer" data-blog="hybrid-vs-offgrid-vs-gridtie">
 <div class="kn-img"><span class="kn-tag">Comparison</span><img data-imgid="23" src="" alt="Solar installer fitting a panel" loading="lazy"></div>
 <div class="kn-body"><h3>Hybrid vs Off-grid vs Grid-tie — which suits you?</h3><p>The three system types compared on cost, complexity, and load-shedding behaviour. No jargon, just plain answers for South African buyers.</p><div class="kn-meta"><span>5 min read</span><span>·</span><span>Decision-stage</span></div></div>
-</article><article class="kn blog-card" role="button" style="cursor:pointer" onclick="showBlogPost('loadshedding-survival-kit')">
+</article><article class="kn blog-card" role="button" style="cursor:pointer" data-blog="loadshedding-survival-kit">
 <div class="kn-img"><span class="kn-tag">Survival</span><img data-imgid="24" src="" alt="Off-grid solar panels" loading="lazy"></div>
 <div class="kn-body"><h3>Load-shedding survival — minimum kit you need</h3><p>The cheapest practical setup to keep lights, WiFi, fridge and TV running through Stage 6. Real shopping lists at three budget levels.</p><div class="kn-meta"><span>4 min read</span><span>·</span><span>Budget-conscious</span></div></div>
 </article></div>
@@ -730,7 +730,7 @@
 <div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Sizing Guide</span><span>7 min read</span><span>·</span><span>Beginner</span></div><h1>How to size your solar system properly</h1><p>A practical walkthrough — from reading your Eskom bill to choosing the right inverter and battery capacity for South African homes.</p></div></div>
 <section class="blk"><div class="container">
 <div class="article-wrap">
-<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<a href="javascript:void(0)" class="article-back" data-page="blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
 <div class="article-body">
 <p>The most common mistake South Africans make when buying solar is basing their decision on what a neighbour bought. A 5kW system that works perfectly for a two-bedroom flat will leave a family-of-four without hot water through a Highveld winter. Right-sizing is not complicated — but it requires twenty minutes with your Eskom bill and an honest look at how your household actually uses electricity.</p>
 <h3>Step 1 — Read your Eskom bill correctly</h3>
@@ -754,7 +754,7 @@
 <h3>Always get a written, itemised quote</h3>
 <p>Any reputable installer will provide a quote specifying inverter make and model, battery brand and chemistry, panel wattage and quantity, and full cable and mounting specifications. If a quote does not include every one of those items, ask for a revised one. A Certificate of Compliance (COC) must also be included in your installation contract — it is a legal requirement and your insurance company can decline a claim without it.</p>
 <div class="article-cta"><h3>Ready to size your system properly?</h3><p>Our team will assess your Eskom bills, your roof, and your load profile — and give you a written quote within 24 hours.</p>
-<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Free Quote</a>
+<a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Get a Free Quote</a>
 <a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27d%20like%20help%20sizing%20my%20solar%20system" target="_blank" class="btn btn-wa">WhatsApp Us</a></div>
 </div>
 </div>
@@ -763,7 +763,7 @@
 <div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Comparison</span><span>5 min read</span><span>·</span><span>Decision-stage</span></div><h1>Hybrid vs Off-grid vs Grid-tie — which suits you?</h1><p>The three system types compared on cost, complexity, and load-shedding behaviour. No jargon, just plain answers for South African buyers.</p></div></div>
 <section class="blk"><div class="container">
 <div class="article-wrap">
-<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<a href="javascript:void(0)" class="article-back" data-page="blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
 <div class="article-body">
 <p>Walk into any solar showroom in South Africa and you will hear three terms used interchangeably: hybrid, off-grid, and grid-tie. They are not the same thing. Getting the distinction wrong can cost you tens of thousands of rands in equipment you either cannot use or should not have bought. Here is a plain-language breakdown of all three.</p>
 <h3>Grid-Tie — lowest cost, zero load-shedding protection</h3>
@@ -787,7 +787,7 @@
 <h3>Lithium vs lead-acid batteries</h3>
 <p>Whatever system type you choose, lithium (LiFePO4) is now the correct default. It offers 80% usable depth of discharge vs 50% for lead-acid, a 10-year warranty vs 3–5 years, and zero maintenance. We stock Sunsynk, Greenrich, and Hubble lithium batteries — all compatible with the inverters we install.</p>
 <div class="article-cta"><h3>Not sure which system is right for your property?</h3><p>Tell us your Eskom bill average and your address — we will recommend the right system and give you a written quote within 24 hours.</p>
-<a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Free Assessment</a>
+<a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Get a Free Assessment</a>
 <a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%27m%20deciding%20between%20hybrid%20and%20off-grid" target="_blank" class="btn btn-wa">WhatsApp a Question</a></div>
 </div>
 </div>
@@ -796,7 +796,7 @@
 <div class="page-hero"><div class="container"><div class="article-meta" style="justify-content:center;color:rgba(255,255,255,.8)"><span class="tag">Survival</span><span>4 min read</span><span>·</span><span>Budget-conscious</span></div><h1>Load-shedding survival — minimum kit you need</h1><p>The cheapest practical setup to keep lights, WiFi, fridge and TV running through Stage 6. Real shopping lists at three budget levels.</p></div></div>
 <section class="blk"><div class="container">
 <div class="article-wrap">
-<a href="javascript:void(0)" class="article-back" onclick="showPage('blog')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
+<a href="javascript:void(0)" class="article-back" data-page="blog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>Back to all articles</a>
 <div class="article-body">
 <p>Stage 6 load-shedding means four-hour blackouts twice a day. No hot water, no WiFi, no security system, no way to charge your phone. A practical load-shedding setup does not require a full solar installation — here is exactly what you need, in order of priority, with realistic costs.</p>
 <h3>Priority 1 — Lights and WiFi (R8,000–R15,000)</h3>
@@ -824,7 +824,7 @@
 <h3>Build it in stages</h3>
 <p>Start with lights and WiFi. Add a proper inverter-battery for fridge and security. Add solar panels to recharge for free and reduce your Eskom draw. Add a solar geyser or heat pump last. Each stage delivers immediate value — and each one makes the next stage cheaper to add.</p>
 <div class="article-cta"><h3>Come into the FMD shop in Vereeniging</h3><p>No 3 Voortrekker Street. We stock inverters, lithium batteries, solar panels, LED lighting, and gas geysers — and our team will help you build a kit that fits your budget.</p>
-<a href="javascript:void(0)" onclick="showPage('shop')" class="btn btn-primary">Browse Our Stock</a>
+<a href="javascript:void(0)" data-page="shop" class="btn btn-primary">Browse Our Stock</a>
 <a href="https://wa.me/27817033912?text=Hi%20FMD%2C%20I%20need%20a%20load-shedding%20kit%20recommendation" target="_blank" class="btn btn-wa">WhatsApp for Advice</a></div>
 </div>
 </div>
@@ -853,16 +853,16 @@
 <section class="blk"><div class="container" style="max-width:900px">
 <h2 style="margin-bottom:1rem">Solar Installations</h2>
 <p style="margin-bottom:1rem">Full PV systems for South African homes and businesses — designed around your actual energy use, your roof type, and load-shedding survival. We do the site survey, the design, the sourcing, the install, and the COC.</p>
-<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get a Solar Quote</a> <a href="https://wa.me/27817033912" target="_blank" class="btn btn-wa"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg>WhatsApp</a></p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Get a Solar Quote</a> <a href="https://wa.me/27817033912" target="_blank" class="btn btn-wa"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg>WhatsApp</a></p>
 <h2 style="margin-bottom:1rem">Electrical Services</h2>
 <p style="margin-bottom:1rem">From a tripped DB at midnight to a complete house re-wire. Our team handles residential, commercial, and light industrial electrical work — to SANS 10142-1 and the Electrical Installation Regulations.</p>
-<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Get an Electrical Quote</a> <a href="tel:+27817033912" class="btn btn-dark">Call 081 703 3912</a></p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Get an Electrical Quote</a> <a href="tel:+27817033912" class="btn btn-dark">Call 081 703 3912</a></p>
 <h2 style="margin-bottom:1rem">Inverter Repair</h2>
 <p style="margin-bottom:1rem">We diagnose and we fix — most major SA inverter brands. Bring yours to our Vereeniging shop. Free diagnosis on Sunsynk, Deye, Luxpower and Must.</p>
-<p style="margin-bottom:2rem"><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Book a Diagnosis</a></p>
+<p style="margin-bottom:2rem"><a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Book a Diagnosis</a></p>
 <h2 style="margin-bottom:1rem">Maintenance &amp; Compliance</h2>
 <p style="margin-bottom:1rem">Annual electrical inspections, solar panel cleaning, surge protection upgrades, and COC renewals — required when selling property or for insurance.</p>
-<p><a href="javascript:void(0)" onclick="showPage('quote')" class="btn btn-primary">Book Maintenance</a></p>
+<p><a href="javascript:void(0)" data-page="quote" class="btn btn-primary">Book Maintenance</a></p>
 </div></section>
 </div>
 
@@ -890,7 +890,7 @@
 <p style="margin-bottom:1rem">Welcome to FMD Electrical (Pty) Ltd — your premier destination for top-notch electrical services in the Vaal Triangle. From routine maintenance and repairs to complex solar installations and electrical upgrades, our team of skilled professionals delivers superior solutions.</p>
 <p style="margin-bottom:1.5rem"><strong>All our employees are qualified and experienced within their field.</strong> Every job is completed to the highest South African electrical standards, with a Certificate of Compliance issued where required.</p>
 <p style="margin-bottom:1.5rem;padding:1rem 1.25rem;border-left:4px solid var(--gold);background:var(--grey-soft);border-radius:var(--r);font-style:italic"><strong>Trade expertise. Trusted supply. Real installations.</strong><br>We install it, we supply it, we support it.</p>
-<a href="javascript:void(0)" onclick="showPage('contact')" class="btn btn-primary">Get in Touch →</a>
+<a href="javascript:void(0)" data-page="contact" class="btn btn-primary">Get in Touch →</a>
 </div></section>
 </div>
 
@@ -922,9 +922,9 @@
 <li><svg viewBox="0 0 32 32" fill="currentColor" style="width:16px;height:16px;flex-shrink:0;margin-top:3px"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Z"/></svg><a href="https://wa.me/27817033912" target="_blank">WhatsApp: 081 703 3912</a></li>
 <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:admin@fmdelectrical.co.za">admin@fmdelectrical.co.za</a></li>
 </ul></div>
-<div><h4>Shop</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('shop')">Shop All</a></li><li><a href="javascript:void(0)" onclick="showPage('cart')">Cart</a></li><li><a href="javascript:void(0)" onclick="showPage('services')">Services</a></li><li><a href="javascript:void(0)" onclick="showPage('quote')">Get a Quote</a></li></ul></div>
-<div><h4>Knowledge</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('blog')">Blog Home</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('size-solar-system')">System Sizing Guide</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('hybrid-vs-offgrid-vs-gridtie')">Hybrid vs Off-grid</a></li><li><a href="javascript:void(0)" onclick="showBlogPost('loadshedding-survival-kit')">Load-shedding Survival</a></li></ul></div>
-<div><h4>Company</h4><ul class="ft-links"><li><a href="javascript:void(0)" onclick="showPage('about')">About</a></li><li><a href="javascript:void(0)" onclick="showPage('contact')">Contact</a></li><li><a href="javascript:void(0)" onclick="showPage('account')">My Account</a></li></ul></div>
+<div><h4>Shop</h4><ul class="ft-links"><li><a href="javascript:void(0)" data-page="shop">Shop All</a></li><li><a href="javascript:void(0)" data-page="cart">Cart</a></li><li><a href="javascript:void(0)" data-page="services">Services</a></li><li><a href="javascript:void(0)" data-page="quote">Get a Quote</a></li></ul></div>
+<div><h4>Knowledge</h4><ul class="ft-links"><li><a href="javascript:void(0)" data-page="blog">Blog Home</a></li><li><a href="javascript:void(0)" data-blog="size-solar-system">System Sizing Guide</a></li><li><a href="javascript:void(0)" data-blog="hybrid-vs-offgrid-vs-gridtie">Hybrid vs Off-grid</a></li><li><a href="javascript:void(0)" data-blog="loadshedding-survival-kit">Load-shedding Survival</a></li></ul></div>
+<div><h4>Company</h4><ul class="ft-links"><li><a href="javascript:void(0)" data-page="about">About</a></li><li><a href="javascript:void(0)" data-page="contact">Contact</a></li><li><a href="javascript:void(0)" data-page="account">My Account</a></li></ul></div>
 </div></div>
 <div class="ft-bottom"><div class="container"><div class="ft-bottom-inner">
 <div>© 2026 FMD Electrical (Pty) Ltd · Vereeniging · South Africa</div>
@@ -934,11 +934,11 @@
 
 <!-- MOBILE BOTTOM NAV -->
 <nav class="mbn">
-<a href="javascript:void(0)" onclick="showPage('home')" data-mnav="home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg><span>Home</span></a>
-<a href="javascript:void(0)" onclick="showPage('shop')" data-mnav="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span>Shop</span></a>
+<a href="javascript:void(0)" data-page="home" data-mnav="home" class="active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg><span>Home</span></a>
+<a href="javascript:void(0)" data-page="shop" data-mnav="shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg><span>Shop</span></a>
 <a href="https://wa.me/27817033912" target="_blank" style="color:var(--wa)"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 0C7.166 0 0 7.166 0 15.999c0 2.736.692 5.422 2.005 7.81L0 32l8.394-2.211a16.011 16.011 0 0 0 7.605 1.937h.001c8.835 0 15.999-7.166 15.999-15.999A15.85 15.85 0 0 0 27.32 4.682 15.84 15.84 0 0 0 16.001 0Zm.002 29.118h-.003a13.265 13.265 0 0 1-6.762-1.853l-.486-.288-5.027 1.324 1.343-4.904-.317-.504a13.255 13.255 0 0 1-2.029-7.069c.003-7.337 5.974-13.307 13.317-13.307a13.226 13.226 0 0 1 9.412 3.901 13.21 13.21 0 0 1 3.895 9.413c-.003 7.337-5.974 13.287-13.343 13.287Z"/></svg><span>WhatsApp</span></a>
-<a href="javascript:void(0)" onclick="showPage('cart')" data-mnav="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="mbn-badge" id="mbnBadge">0</span><span>Cart</span></a>
-<a href="javascript:void(0)" onclick="showPage('account')" data-mnav="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Account</span></a>
+<a href="javascript:void(0)" data-page="cart" data-mnav="cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/></svg><span class="mbn-badge" id="mbnBadge">0</span><span>Cart</span></a>
+<a href="javascript:void(0)" data-page="account" data-mnav="account"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Account</span></a>
 </nav>
 
 <div class="wa-float">
